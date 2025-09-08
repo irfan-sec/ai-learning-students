@@ -10,24 +10,8 @@ permalink: /
 
 Welcome to the **AI Learning Students Documentation**! This comprehensive educational resource provides a practical, hands-on introduction to Artificial Intelligence following a structured 14-week curriculum.
 
-<div class="ai-showcase">
-  <div class="showcase-item">
-    <img src="{{ '/assets/images/ai-brain.svg' | relative_url }}" alt="AI Brain Visualization" class="showcase-image">
-    <h3>🧠 Intelligent Systems</h3>
-    <p>Explore how artificial minds process information and make decisions</p>
-  </div>
-  
-  <div class="showcase-item">
-    <img src="{{ '/assets/images/neural-network.svg' | relative_url }}" alt="Neural Network Architecture" class="showcase-image">
-    <h3>🔗 Neural Networks</h3>
-    <p>Understand the building blocks of modern AI and deep learning</p>
-  </div>
-  
-  <div class="showcase-item">
-    <img src="{{ '/assets/images/search-algorithm.svg' | relative_url }}" alt="Search Algorithms" class="showcase-image">
-    <h3>🔍 Search Algorithms</h3>
-    <p>Master problem-solving techniques that power intelligent agents</p>
-  </div>
+<div class="hero-image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/ArtificialFictionBrain.png/640px-ArtificialFictionBrain.png" alt="AI Concept Brain Visualization" style="max-width: 400px; margin: 2rem auto; display: block; border-radius: 20px; box-shadow: var(--shadow-lg);">
 </div>
 
 ---
@@ -431,72 +415,6 @@ Upon successful completion of this course, students will be able to:
 @media (max-width: 768px) {
   .part-cards {
     grid-template-columns: 1fr;
-  }
-}
-
-/* AI Showcase Styles */
-.ai-showcase {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem 0;
-}
-
-.showcase-item {
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-  border-radius: var(--border-radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: var(--transition);
-  backdrop-filter: blur(10px);
-}
-
-.showcase-item:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
-  border-color: var(--primary-color);
-}
-
-.showcase-image {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.showcase-item:hover .showcase-image {
-  transform: scale(1.05);
-}
-
-.showcase-item h3 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-.showcase-item p {
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .ai-showcase {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .showcase-item {
-    padding: 1.5rem;
-  }
-  
-  .showcase-image {
-    width: 150px;
-    height: 120px;
   }
 }
 </style>
