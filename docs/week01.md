@@ -11,123 +11,43 @@ permalink: /week01.html
 
 # Week 1: Introduction to AI and Intelligent Agents
 
-<div class="week-hero">
-  <div class="hero-visual">
-    <img src="{{ '/assets/images/ai-brain.svg' | relative_url }}" alt="AI Brain Visualization" class="week-hero-image">
-  </div>
-  <div class="hero-content">
-    <h2>🧠 Journey into Artificial Intelligence</h2>
-    <p>Discover the fascinating world of AI, from its philosophical foundations to modern intelligent agents that power today's technology.</p>
-  </div>
-</div>
-
 ## 📚 Learning Objectives
-<div class="learning-objectives enhanced">
 By the end of this week, students will be able to:
-
-<div class="objective-grid">
-  <div class="objective-card">
-    <div class="objective-icon">🎯</div>
-    <div class="objective-text">
-      <strong>Define AI:</strong> Understand artificial intelligence and its historical development
-    </div>
-  </div>
-  
-  <div class="objective-card">
-    <div class="objective-icon">🔄</div>
-    <div class="objective-text">
-      <strong>Distinguish Types:</strong> Differentiate between narrow and general AI
-    </div>
-  </div>
-  
-  <div class="objective-card">
-    <div class="objective-icon">🤖</div>
-    <div class="objective-text">
-      <strong>Agent Concepts:</strong> Understand intelligent agents and the PEAS framework
-    </div>
-  </div>
-  
-  <div class="objective-card">
-    <div class="objective-icon">🌐</div>
-    <div class="objective-text">
-      <strong>Environments:</strong> Identify different types of agent environments
-    </div>
-  </div>
-  
-  <div class="objective-card">
-    <div class="objective-icon">💼</div>
-    <div class="objective-text">
-      <strong>Applications:</strong> Recognize key AI applications in modern technology
-    </div>
-  </div>
-</div>
-</div>
+- Define artificial intelligence and understand its historical development
+- Distinguish between narrow and general AI
+- Understand the concept of intelligent agents and the PEAS framework
+- Identify different types of agent environments
+- Recognize key AI applications in modern technology
 
 ---
 
 ## 🧠 What is Artificial Intelligence?
 
-<div class="ai-definition-section">
-  <div class="definition-visual">
-    <div class="thinking-process">
-      <div class="thought-bubble" data-thought="Data Processing">💾</div>
-      <div class="thought-bubble" data-thought="Pattern Recognition">🔍</div>
-      <div class="thought-bubble" data-thought="Decision Making">⚡</div>
-      <div class="thought-bubble" data-thought="Learning">🎓</div>
-    </div>
-  </div>
-  
-  <div class="definition-content">
-    <p class="highlight-text">
-      <strong>Artificial Intelligence (AI)</strong> is the science of making machines act intelligently. But what does "acting intelligently" mean?
-    </p>
-  </div>
-</div>
+![AI Timeline](images/ai-timeline.png)
+
+**Artificial Intelligence (AI)** is the science of making machines act intelligently. But what does "acting intelligently" mean?
 
 ### Historical Perspectives on AI
 
-<div class="perspectives-grid">
-  <div class="perspective-card" data-approach="cognitive">
-    <div class="perspective-icon">🧠</div>
-    <h4>1. Thinking Humanly</h4>
-    <p class="approach-subtitle">Cognitive Science Approach</p>
-    <ul>
-      <li>Model human thought processes</li>
-      <li>Understand how the human mind works</li>
-      <li>Example: Cognitive architectures that simulate human reasoning</li>
-    </ul>
-  </div>
+#### 1. **Thinking Humanly** (Cognitive Science Approach)
+- Model human thought processes
+- Understand how the human mind works
+- Example: Cognitive architectures that simulate human reasoning
 
-  <div class="perspective-card" data-approach="turing">
-    <div class="perspective-icon">🎭</div>
-    <h4>2. Acting Humanly</h4>
-    <p class="approach-subtitle">Turing Test Approach</p>
-    <ul>
-      <li>Pass the Turing Test - convince a human interrogator that the machine is human</li>
-      <li>Focus on external behavior rather than internal processes</li>
-      <li><strong>Alan Turing (1950):</strong> "Can machines think?"</li>
-    </ul>
-  </div>
+#### 2. **Acting Humanly** (Turing Test Approach)  
+- Pass the Turing Test - convince a human interrogator that the machine is human
+- Focus on external behavior rather than internal processes
+- **Alan Turing (1950):** "Can machines think?"
 
-  <div class="perspective-card" data-approach="logical">
-    <div class="perspective-icon">⚖️</div>
-    <h4>3. Thinking Rationally</h4>
-    <p class="approach-subtitle">Laws of Thought Approach</p>
-    <ul>
-      <li>Use logical reasoning and formal logic</li>
-      <li>Aristotelian syllogisms and mathematical proof</li>
-      <li>Problem: Not all intelligent behavior is logical</li>
-    </ul>
-  </div>
+#### 3. **Thinking Rationally** (Laws of Thought Approach)
+- Use logical reasoning and formal logic
+- Aristotelian syllogisms and mathematical proof
+- Problem: Not all intelligent behavior is logical
 
-  <div class="perspective-card featured" data-approach="rational">
-    <div class="perspective-icon">⭐</div>
-    <h4>4. Acting Rationally</h4>
-    <p class="approach-subtitle">Rational Agent Approach</p>
-    <div class="featured-badge">Current Dominant Paradigm</div>
-    <ul>
-      <li>Do the "right thing" given available information</li>
-      <li>Maximize expected performance based on goals</li>
+#### 4. **Acting Rationally** (Rational Agent Approach) ⭐
+- **Current dominant paradigm**
+- Do the "right thing" given available information
+- Maximize expected performance based on goals
 
 ---
 
