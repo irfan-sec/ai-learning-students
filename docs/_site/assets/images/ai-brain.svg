@@ -1,0 +1,174 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="synapseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    
+    <filter id="aiGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <clipPath id="brainClip">
+      <path d="M300,100 Q450,120 480,200 Q500,280 450,350 Q400,400 350,420 Q300,430 250,420 Q200,400 150,350 Q100,280 120,200 Q150,120 300,100 Z"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="600" fill="#0f172a"/>
+  
+  <!-- Main brain outline -->
+  <path d="M300,100 Q450,120 480,200 Q500,280 450,350 Q400,400 350,420 Q300,430 250,420 Q200,400 150,350 Q100,280 120,200 Q150,120 300,100 Z" 
+        fill="url(#brainGradient)" opacity="0.8" filter="url(#aiGlow)"/>
+  
+  <!-- Inner brain texture -->
+  <g clip-path="url(#brainClip)" opacity="0.6">
+    <!-- Neural pathways -->
+    <path d="M180,180 Q250,160 320,180 Q380,200 420,240" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,20;10,10;20,0;0,20" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M160,220 Q200,200 240,220 Q280,240 320,220 Q360,200 400,220" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,25;12,12;25,0;0,25" dur="5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M170,280 Q220,260 270,280 Q320,300 370,280 Q420,260 450,280" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,30;15,15;30,0;0,30" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M190,320 Q240,300 290,320 Q340,340 390,320" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,22;11,11;22,0;0,22" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Synapses -->
+    <circle cx="220" cy="180" r="4" fill="#ffffff" opacity="0.8">
+      <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="200" r="3" fill="#ffffff" opacity="0.7">
+      <animate attributeName="r" values="3;6;3" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="340" cy="180" r="5" fill="#ffffff" opacity="0.9">
+      <animate attributeName="r" values="5;8;5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="200" cy="240" r="3" fill="#ffffff" opacity="0.6">
+      <animate attributeName="r" values="3;6;3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="220" r="4" fill="#ffffff" opacity="0.8">
+      <animate attributeName="r" values="4;7;4" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="240" r="3" fill="#ffffff" opacity="0.7">
+      <animate attributeName="r" values="3;6;3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="240" cy="300" r="4" fill="#ffffff" opacity="0.9">
+      <animate attributeName="r" values="4;7;4" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="280" r="5" fill="#ffffff" opacity="0.8">
+      <animate attributeName="r" values="5;8;5" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="300" r="3" fill="#ffffff" opacity="0.7">
+      <animate attributeName="r" values="3;6;3" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="270" cy="340" r="4" fill="#ffffff" opacity="0.8">
+      <animate attributeName="r" values="4;7;4" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="320" r="3" fill="#ffffff" opacity="0.6">
+      <animate attributeName="r" values="3;6;3" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Brain sections -->
+  <g opacity="0.3">
+    <!-- Frontal lobe -->
+    <ellipse cx="200" cy="180" rx="40" ry="30" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    <text x="200" y="185" text-anchor="middle" fill="#ffffff" font-size="10" font-family="Arial">Logic</text>
+    
+    <!-- Parietal lobe -->
+    <ellipse cx="350" cy="200" rx="35" ry="25" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    <text x="350" y="205" text-anchor="middle" fill="#ffffff" font-size="10" font-family="Arial">Perception</text>
+    
+    <!-- Temporal lobe -->
+    <ellipse cx="250" cy="320" rx="45" ry="25" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    <text x="250" y="325" text-anchor="middle" fill="#ffffff" font-size="10" font-family="Arial">Learning</text>
+    
+    <!-- Memory center -->
+    <ellipse cx="380" cy="280" rx="30" ry="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    <text x="380" y="285" text-anchor="middle" fill="#ffffff" font-size="10" font-family="Arial">Memory</text>
+  </g>
+  
+  <!-- External connections -->
+  <g opacity="0.4">
+    <!-- Input connections -->
+    <line x1="50" y1="200" x2="120" y2="200" stroke="url(#synapseGradient)" stroke-width="3">
+      <animate attributeName="x1" values="50;80;50" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <text x="30" y="205" fill="#ffffff" font-size="12" font-family="Arial">Input</text>
+    
+    <line x1="70" y1="280" x2="140" y2="300" stroke="url(#synapseGradient)" stroke-width="3">
+      <animate attributeName="x1" values="70;100;70" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <text x="40" y="285" fill="#ffffff" font-size="12" font-family="Arial">Sensors</text>
+    
+    <!-- Output connections -->
+    <line x1="480" y1="240" x2="550" y2="240" stroke="url(#synapseGradient)" stroke-width="3">
+      <animate attributeName="x2" values="550;520;550" dur="2.8s" repeatCount="indefinite"/>
+    </line>
+    <text x="560" y="245" fill="#ffffff" font-size="12" font-family="Arial">Output</text>
+    
+    <line x1="460" y1="320" x2="530" y2="340" stroke="url(#synapseGradient)" stroke-width="3">
+      <animate attributeName="x2" values="530;500;530" dur="3.2s" repeatCount="indefinite"/>
+    </line>
+    <text x="540" y="345" fill="#ffffff" font-size="12" font-family="Arial">Actions</text>
+  </g>
+  
+  <!-- Thought bubbles -->
+  <g opacity="0.7">
+    <circle cx="150" cy="120" r="8" fill="rgba(255,255,255,0.3)">
+      <animate attributeName="r" values="8;12;8" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="100" r="6" fill="rgba(255,255,255,0.2)">
+      <animate attributeName="r" values="6;10;6" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="90" r="4" fill="rgba(255,255,255,0.1)">
+      <animate attributeName="r" values="4;8;4" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="450" cy="130" r="7" fill="rgba(255,255,255,0.25)">
+      <animate attributeName="r" values="7;11;7" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.75;0.25" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="110" r="5" fill="rgba(255,255,255,0.15)">
+      <animate attributeName="r" values="5;9;5" dur="4.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.65;0.15" dur="4.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Central AI core -->
+  <circle cx="300" cy="260" r="25" fill="rgba(255,255,255,0.1)" stroke="url(#brainGradient)" stroke-width="2">
+    <animate attributeName="r" values="25;35;25" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="2;4;2" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <text x="300" y="265" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="Arial">AI</text>
+  
+  <!-- Title -->
+  <text x="300" y="50" text-anchor="middle" fill="url(#brainGradient)" font-size="32" font-weight="bold" font-family="Arial">Artificial Intelligence</text>
+  <text x="300" y="520" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial">Computational Brain Model</text>
+</svg>
