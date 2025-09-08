@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 8: Supervised Learning I - Regression & Classification"
 permalink: /week08.html
 ---

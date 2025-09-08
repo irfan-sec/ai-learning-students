@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 12: AI in Practice & Selected Topics"
 permalink: /week12.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 3: Problem-Solving by Search II (Informed Search)"
 permalink: /week03.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 4: Adversarial Search (Game Playing)"
 permalink: /week04.html
 ---
