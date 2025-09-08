@@ -711,6 +711,47 @@ tr:hover {
   .footer-content {
     grid-template-columns: 1fr;
   }
+  
+  /* Week page responsive */
+  .week-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .week-hero-image {
+    width: 150px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  .objective-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ai-definition-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .thinking-process {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+  }
+  
+  .thought-bubble {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .perspectives-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .perspective-card {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -761,6 +802,324 @@ tr:hover {
   width: 4px;
   height: 100%;
   background: var(--primary-gradient);
+}
+
+/* Week Hero Section */
+.week-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.week-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary-gradient);
+}
+
+.week-hero-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  animation: heroFloat 4s ease-in-out infinite;
+}
+
+.hero-content h2 {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Enhanced Learning Objectives */
+.learning-objectives.enhanced {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.05));
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.learning-objectives.enhanced::before {
+  content: '🎯';
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: var(--surface);
+  padding: 0 10px;
+  font-size: 1.5rem;
+}
+
+.objective-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.objective-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.objective-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--secondary-color);
+}
+
+.objective-icon {
+  font-size: 2rem;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.objective-text {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.objective-text strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* AI Definition Section */
+.ai-definition-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.definition-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.thinking-process {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.thought-bubble {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: bubbleFloat 3s ease-in-out infinite;
+}
+
+.thought-bubble:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+}
+
+.thought-bubble::after {
+  content: attr(data-thought);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thought-bubble:hover::after {
+  opacity: 1;
+}
+
+.thought-bubble:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0s;
+}
+
+.thought-bubble:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation-delay: 0.5s;
+}
+
+.thought-bubble:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 1s;
+}
+
+.thought-bubble:nth-child(4) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation-delay: 1.5s;
+}
+
+.definition-content {
+  flex: 2;
+}
+
+.highlight-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Perspectives Grid */
+.perspectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.perspective-card {
+  background: var(--surface);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  border: 2px solid var(--border-light);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.perspective-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.perspective-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.perspective-card:hover::before {
+  transform: scaleX(1);
+}
+
+.perspective-card.featured {
+  border-color: var(--primary-color);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.02));
+}
+
+.perspective-card.featured::before {
+  transform: scaleX(1);
+}
+
+.perspective-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.perspective-card h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.approach-subtitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.featured-badge {
+  display: inline-block;
+  background: var(--primary-gradient);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.perspective-card ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.perspective-card li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes bubbleFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-5px) scale(1.05); }
 }
 
 .concept-card {
