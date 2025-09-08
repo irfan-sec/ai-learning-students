@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A comprehensive educational resource for learning Artificial Intelligence - structured 14-week curriculum for undergraduate students">
+  
+  <title>Week 10: Introduction to Neural Networks & Deep Learning | AI Learning Students</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/ai-learning-students/assets/css/style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Navigation Header -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <a href="/ai-learning-students/" class="brand-link">
+            <div class="brand-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <span class="brand-text">AI Learning Students</span>
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+          <div class="nav-links">
+            <a href="/ai-learning-students/" class="nav-link ">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+            <div class="nav-dropdown">
+              <a href="#" class="nav-link dropdown-toggle">
+                <i class="fas fa-book"></i>
+                Weeks
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                
+                  
+                  <a href="/ai-learning-students/week01.html" class="dropdown-link">
+                    Week 1
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week02.html" class="dropdown-link">
+                    Week 2
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week03.html" class="dropdown-link">
+                    Week 3
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week04.html" class="dropdown-link">
+                    Week 4
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week05.html" class="dropdown-link">
+                    Week 5
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week06.html" class="dropdown-link">
+                    Week 6
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week07.html" class="dropdown-link">
+                    Week 7
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week08.html" class="dropdown-link">
+                    Week 8
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week09.html" class="dropdown-link">
+                    Week 9
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week10.html" class="dropdown-link">
+                    Week 10
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week11.html" class="dropdown-link">
+                    Week 11
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week12.html" class="dropdown-link">
+                    Week 12
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week13.html" class="dropdown-link">
+                    Week 13
+                  </a>
+                
+                  
+                  <a href="/ai-learning-students/week14.html" class="dropdown-link">
+                    Week 14
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="nav-progress">
+            <div class="progress-indicator">
+              <div class="progress-circle">
+                <div class="progress-fill"></div>
+                <span class="progress-text">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-container">
+        <div class="week-header">
+  <div class="week-hero">
+    <div class="week-number-large"></div>
+    <div class="week-title-section">
+      <h1>Week 10: Introduction to Neural Networks & Deep Learning</h1>
+      <div class="week-progress-bar">
+        <div class="progress-fill" style="width: 0.0%"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="week-navigation">
+    
+    
+    
+    <a href="index.html" class="nav-button home">
+      <i class="fas fa-home"></i>
+      Course Overview
+    </a>
+    
+    
+      <a href="week01.html" class="nav-button next">
+        Next Week
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    
+  </div>
+</div>
+
+<div class="week-content">
+  <h3 id="navigation">Navigation</h3>
+<p><a href="index.html">🏠 Home</a> | <a href="week09.html">← Previous: Week 9</a> | <a href="week11.html">Next: Week 11 →</a></p>
+
+<hr />
+
+<h1 id="week-10-introduction-to-neural-networks--deep-learning">Week 10: Introduction to Neural Networks &amp; Deep Learning</h1>
+
+<h2 id="-learning-objectives">📚 Learning Objectives</h2>
+<ul>
+  <li>Understand the biological inspiration for neural networks</li>
+  <li>Implement perceptrons and multi-layer networks</li>
+  <li>Learn backpropagation algorithm for training</li>
+  <li>Explore convolutional neural networks (CNNs)</li>
+  <li>Apply neural networks to image and text problems</li>
+</ul>
+
+<hr />
+
+<h2 id="-neural-network-fundamentals">🧠 Neural Network Fundamentals</h2>
+
+<h3 id="the-perceptron">The Perceptron</h3>
+<p>The building block of neural networks.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="k">class</span> <span class="nc">Perceptron</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">learning_rate</span> <span class="o">=</span> <span class="n">learning_rate</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">epochs</span> <span class="o">=</span> <span class="n">epochs</span>
+    
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">X</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">epochs</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">xi</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+                <span class="n">prediction</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">+=</span> <span class="bp">self</span><span class="p">.</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="p">(</span><span class="n">target</span> <span class="o">-</span> <span class="n">prediction</span><span class="p">)</span> <span class="o">*</span> <span class="n">xi</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="p">.</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="p">(</span><span class="n">target</span> <span class="o">-</span> <span class="n">prediction</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">where</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">activation</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">activation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="o">+</span> <span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="multi-layer-networks">Multi-Layer Networks</h3>
+<p>Stack perceptrons to learn complex patterns.</p>
+
+<hr />
+
+<h2 id="-backpropagation">🔄 Backpropagation</h2>
+
+<h3 id="training-deep-networks">Training Deep Networks</h3>
+<p>Learn how to compute gradients through chain rule.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example with TensorFlow/Keras
+</span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras</span> <span class="kn">import</span> <span class="n">layers</span><span class="p">,</span> <span class="n">models</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="n">Sequential</span><span class="p">([</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">784</span><span class="p">,)),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'softmax'</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="n">model</span><span class="p">.</span><span class="nb">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s">'adam'</span><span class="p">,</span>
+              <span class="n">loss</span><span class="o">=</span><span class="s">'sparse_categorical_crossentropy'</span><span class="p">,</span>
+              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s">'accuracy'</span><span class="p">])</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="️-convolutional-neural-networks-cnns">🖼️ Convolutional Neural Networks (CNNs)</h2>
+
+<h3 id="image-recognition">Image Recognition</h3>
+<p>Specialized networks for visual data.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># CNN for image classification
+</span><span class="n">cnn_model</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="n">Sequential</span><span class="p">([</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Flatten</span><span class="p">(),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">layers</span><span class="p">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'softmax'</span><span class="p">)</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-resources--applications">🔗 Resources &amp; Applications</h2>
+
+<h3 id="essential-reading">Essential Reading</h3>
+<ul>
+  <li><a href="https://www.deeplearningbook.org/">Deep Learning Book</a> - Comprehensive theoretical foundation</li>
+  <li><a href="http://neuralnetworksanddeeplearning.com/">Neural Networks and Deep Learning</a> - Intuitive explanations</li>
+</ul>
+
+<h3 id="video-resources">Video Resources</h3>
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi">Neural Networks - 3Blue1Brown</a></li>
+  <li><a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization - Andrew Ng</a></li>
+</ul>
+
+<h3 id="hands-on-projects">Hands-On Projects</h3>
+<ul>
+  <li>MNIST digit recognition</li>
+  <li>CIFAR-10 image classification</li>
+  <li>Text generation with RNNs</li>
+</ul>
+
+<hr />
+
+<h3 id="navigation-1">Navigation</h3>
+<p><a href="index.html">🏠 Home</a> | <a href="week09.html">← Previous: Week 9</a> | <a href="week11.html">Next: Week 11 →</a></p>
+
+</div>
+
+<style>
+.week-header {
+  margin: -2rem -1.5rem 3rem -1.5rem;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.week-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.week-number-large {
+  font-size: 4rem;
+  font-weight: 800;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.8;
+  min-width: 5rem;
+  text-align: center;
+}
+
+.week-title-section {
+  flex: 1;
+}
+
+.week-title-section h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.week-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.week-progress-bar .progress-fill {
+  height: 100%;
+  background: var(--primary-gradient);
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+.week-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.week-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.learning-objectives {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+  box-shadow: var(--shadow);
+}
+
+.learning-objectives h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learning-objectives ul {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-objectives li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.learning-objectives li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-3);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .week-header {
+    margin: -2rem -1rem 2rem -1rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .week-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .week-number-large {
+    font-size: 3rem;
+  }
+  
+  .week-title-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .week-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+</style>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>AI Learning Students</h3>
+            <p>A comprehensive educational resource for learning Artificial Intelligence - structured 14-week curriculum for undergraduate students</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/ai-learning-students/">Course Overview</a></li>
+              <li><a href="https://github.com/irfan-sec/ai-learning-students">GitHub Repository</a></li>
+              <li><a href="/ai-learning-students/week01.html">Get Started</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://aima.cs.berkeley.edu/">AIMA Textbook</a></li>
+              <li><a href="https://scikit-learn.org/">Scikit-learn</a></li>
+              <li><a href="https://www.fast.ai/">Fast.ai</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AI Learning Community. Licensed under MIT License.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/ai-learning-students/assets/js/theme.js"></script>
+</body>
+</html>
