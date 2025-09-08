@@ -1,0 +1,330 @@
+/* Enhanced Particle System and Advanced Visual Effects */
+
+.particle-system {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.8), rgba(139, 92, 246, 0.4));
+  border-radius: 50%;
+  animation: particleFloat linear infinite;
+}
+
+.particle.small {
+  width: 4px;
+  height: 4px;
+  animation-duration: 15s;
+}
+
+.particle.medium {
+  width: 6px;
+  height: 6px;
+  animation-duration: 20s;
+}
+
+.particle.large {
+  width: 8px;
+  height: 8px;
+  animation-duration: 25s;
+}
+
+/* Data flow visualization */
+.data-flow-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.8), transparent);
+  animation: dataFlow 3s ease-in-out infinite;
+}
+
+/* Interactive glow effects */
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6, #06b6d4, #10b981);
+  border-radius: inherit;
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.glow-effect:hover::before {
+  opacity: 0.7;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* Circuit board pattern overlay */
+.circuit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: 
+    linear-gradient(90deg, rgba(99, 102, 241, 0.3) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(99, 102, 241, 0.3) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: circuitFlow 10s linear infinite;
+  pointer-events: none;
+}
+
+/* Advanced loading states */
+.loading-skeleton {
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0.1) 25%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 0.1) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Floating icons */
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: floatIcon 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-icon:nth-child(1) { animation-delay: 0s; }
+.floating-icon:nth-child(2) { animation-delay: 1s; }
+.floating-icon:nth-child(3) { animation-delay: 2s; }
+.floating-icon:nth-child(4) { animation-delay: 3s; }
+.floating-icon:nth-child(5) { animation-delay: 4s; }
+
+/* Interactive tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Advanced button effects */
+.btn-advanced {
+  position: relative;
+  padding: 12px 24px;
+  background: var(--primary-gradient);
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-advanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-advanced:hover::before {
+  left: 100%;
+}
+
+.btn-advanced:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.btn-advanced:active {
+  transform: translateY(0);
+}
+
+/* Gradient text effects */
+.gradient-text {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Morphing shapes */
+.morphing-shape {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  animation: morphShape 6s ease-in-out infinite;
+}
+
+/* Advanced keyframes */
+@keyframes particleFloat {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes dataFlow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.7;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(5px);
+  }
+}
+
+@keyframes circuitFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes morphShape {
+  0%, 100% {
+    border-radius: 50%;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 25% 75%;
+    transform: rotate(90deg);
+  }
+  50% {
+    border-radius: 0%;
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 75% 25%;
+    transform: rotate(270deg);
+  }
+}
+
+/* Responsive adjustments for particles */
+@media (max-width: 768px) {
+  .particle-system {
+    display: none; /* Reduce particles on mobile for performance */
+  }
+  
+  .floating-icon {
+    font-size: 1.5rem;
+  }
+  
+  .morphing-shape {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .particle {
+    background: white;
+  }
+  
+  .glow-effect::before {
+    display: none;
+  }
+}
