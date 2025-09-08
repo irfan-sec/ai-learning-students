@@ -6,6 +6,8 @@ baseurl: "/ai-learning-students"
 
 # Theme - Custom theme with layouts in _layouts/
 # theme: minima
+theme: null
+remote_theme: null
 
 # Markdown settings
 markdown: kramdown
