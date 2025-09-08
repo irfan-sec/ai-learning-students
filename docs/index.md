@@ -1,16 +1,18 @@
 ---
-layout: default
+layout: home
 title: "AI Learning Students - Course Overview"
 permalink: /
 ---
 
-# Introduction to Artificial Intelligence
+# 🤖 Introduction to Artificial Intelligence
 **Course Code:** CS 2250  
 **Target Audience:** 3rd Semester Bachelor's students in Computer Science, Data Science, or related fields
 
-Welcome to the AI Learning Students Documentation! This comprehensive educational resource provides a practical, hands-on introduction to Artificial Intelligence following a structured 14-week curriculum.
+Welcome to the **AI Learning Students Documentation**! This comprehensive educational resource provides a practical, hands-on introduction to Artificial Intelligence following a structured 14-week curriculum.
 
-![AI Concept Map](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/ArtificialFictionBrain.png/640px-ArtificialFictionBrain.png)
+<div class="hero-image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/ArtificialFictionBrain.png/640px-ArtificialFictionBrain.png" alt="AI Concept Brain Visualization" style="max-width: 400px; margin: 2rem auto; display: block; border-radius: 20px; box-shadow: var(--shadow-lg);">
+</div>
 
 ---
 
@@ -22,32 +24,400 @@ This course provides a broad introduction to the fundamental principles and tech
 
 ## 🎯 Learning Objectives
 
+<div class="learning-objectives">
 Upon successful completion of this course, students will be able to:
 
-1. **Define AI** and describe the major subfields and applications
-2. **Formulate real-world problems** as search problems and implement algorithms to solve them (uninformed search, informed search, adversarial search)
-3. **Understand the principles** of knowledge representation and logical reasoning
-4. **Explain basic concepts** of probability theory for uncertain reasoning
-5. **Describe core concepts** of machine learning, including different learning paradigms
-6. **Implement and train** basic supervised learning models (linear regression, classification, neural networks)
-7. **Recognize societal and ethical implications** of AI technology
+<div class="objectives-grid">
+<div class="objective-item">
+  <div class="objective-icon">🎯</div>
+  <div class="objective-content">
+    <h4>Define AI</h4>
+    <p>Understand artificial intelligence and describe the major subfields and applications</p>
+  </div>
+</div>
+
+<div class="objective-item">
+  <div class="objective-icon">🔍</div>
+  <div class="objective-content">
+    <h4>Formulate Problems</h4>
+    <p>Transform real-world problems into search problems and implement algorithms to solve them</p>
+  </div>
+</div>
+
+<div class="objective-item">
+  <div class="objective-icon">🧠</div>
+  <div class="objective-content">
+    <h4>Knowledge Representation</h4>
+    <p>Understand principles of knowledge representation and logical reasoning</p>
+  </div>
+</div>
+
+<div class="objective-item">
+  <div class="objective-icon">📊</div>
+  <div class="objective-content">
+    <h4>Probability Theory</h4>
+    <p>Explain basic concepts of probability theory for uncertain reasoning</p>
+  </div>
+</div>
+
+<div class="objective-item">
+  <div class="objective-icon">🤖</div>
+  <div class="objective-content">
+    <h4>Machine Learning</h4>
+    <p>Describe core ML concepts and implement basic supervised learning models</p>
+  </div>
+</div>
+
+<div class="objective-item">
+  <div class="objective-icon">⚖️</div>
+  <div class="objective-content">
+    <h4>AI Ethics</h4>
+    <p>Recognize societal and ethical implications of AI technology</p>
+  </div>
+</div>
+</div>
+</div>
+
+<style>
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.objective-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.objective-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.objective-icon {
+  font-size: 2rem;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.objective-content h4 {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.objective-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .objectives-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 ---
 
 ## 📚 Weekly Course Navigation
 
-### Part I: Foundations and Problem-Solving
-- **[Week 1: Introduction to AI and Intelligent Agents](week01.html)** - What is AI? Intelligent agents and environments
-- **[Week 2: Problem-Solving by Search I (Uninformed Search)](week02.html)** - BFS, DFS, Uniform Cost Search
-- **[Week 3: Problem-Solving by Search II (Informed Search)](week03.html)** - A*, Heuristics, Greedy Search
-- **[Week 4: Adversarial Search (Game Playing)](week04.html)** - Minimax, Alpha-Beta Pruning
+<div class="course-nav">
 
-### Part II: Knowledge, Reasoning, and Uncertainty
-- **[Week 5: Knowledge Representation & Reasoning I (Logic)](week05.html)** - Propositional and First-Order Logic
-- **[Week 6: Reasoning under Uncertainty](week06.html)** - Probability, Bayes' Rule, Bayesian Networks
+### 🎯 Part I: Foundations and Problem-Solving
+<div class="part-cards">
+<div class="week-card">
+  <div class="week-number">01</div>
+  <div class="week-content">
+    <h4><a href="week01.html">Introduction to AI and Intelligent Agents</a></h4>
+    <p>What is AI? Intelligent agents and environments</p>
+    <div class="week-tags">
+      <span class="tag">Foundations</span>
+      <span class="tag">Agents</span>
+    </div>
+  </div>
+</div>
 
-### Part III: Introduction to Machine Learning
-- **[Week 7: Machine Learning Fundamentals](week07.html)** - Types of learning, training/validation/test sets
+<div class="week-card">
+  <div class="week-number">02</div>
+  <div class="week-content">
+    <h4><a href="week02.html">Problem-Solving by Search I</a></h4>
+    <p>BFS, DFS, Uniform Cost Search</p>
+    <div class="week-tags">
+      <span class="tag">Search</span>
+      <span class="tag">Algorithms</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">03</div>
+  <div class="week-content">
+    <h4><a href="week03.html">Problem-Solving by Search II</a></h4>
+    <p>A*, Heuristics, Greedy Search</p>
+    <div class="week-tags">
+      <span class="tag">Informed Search</span>
+      <span class="tag">Heuristics</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">04</div>
+  <div class="week-content">
+    <h4><a href="week04.html">Adversarial Search</a></h4>
+    <p>Minimax, Alpha-Beta Pruning</p>
+    <div class="week-tags">
+      <span class="tag">Game Theory</span>
+      <span class="tag">Minimax</span>
+    </div>
+  </div>
+</div>
+</div>
+
+### 🧠 Part II: Knowledge, Reasoning, and Uncertainty
+<div class="part-cards">
+<div class="week-card">
+  <div class="week-number">05</div>
+  <div class="week-content">
+    <h4><a href="week05.html">Knowledge Representation & Reasoning</a></h4>
+    <p>Propositional and First-Order Logic</p>
+    <div class="week-tags">
+      <span class="tag">Logic</span>
+      <span class="tag">Knowledge</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">06</div>
+  <div class="week-content">
+    <h4><a href="week06.html">Reasoning under Uncertainty</a></h4>
+    <p>Probability, Bayes' Rule, Bayesian Networks</p>
+    <div class="week-tags">
+      <span class="tag">Probability</span>
+      <span class="tag">Bayes</span>
+    </div>
+  </div>
+</div>
+</div>
+
+### 🤖 Part III: Introduction to Machine Learning
+<div class="part-cards">
+<div class="week-card">
+  <div class="week-number">07</div>
+  <div class="week-content">
+    <h4><a href="week07.html">Machine Learning Fundamentals</a></h4>
+    <p>Types of learning, training/validation/test sets</p>
+    <div class="week-tags">
+      <span class="tag">ML Basics</span>
+      <span class="tag">Data</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">08</div>
+  <div class="week-content">
+    <h4><a href="week08.html">Supervised Learning I</a></h4>
+    <p>Linear models, decision trees</p>
+    <div class="week-tags">
+      <span class="tag">Supervised</span>
+      <span class="tag">Regression</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">09</div>
+  <div class="week-content">
+    <h4><a href="week09.html">Supervised Learning II</a></h4>
+    <p>SVM, ensemble methods, neural networks</p>
+    <div class="week-tags">
+      <span class="tag">Advanced ML</span>
+      <span class="tag">Neural Nets</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">10</div>
+  <div class="week-content">
+    <h4><a href="week10.html">Introduction to Neural Networks</a></h4>
+    <p>Perceptrons, backpropagation, CNNs</p>
+    <div class="week-tags">
+      <span class="tag">Deep Learning</span>
+      <span class="tag">CNNs</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">11</div>
+  <div class="week-content">
+    <h4><a href="week11.html">Unsupervised Learning</a></h4>
+    <p>Clustering, dimensionality reduction</p>
+    <div class="week-tags">
+      <span class="tag">Clustering</span>
+      <span class="tag">PCA</span>
+    </div>
+  </div>
+</div>
+</div>
+
+### 🚀 Part IV: Advanced Topics and Applications
+<div class="part-cards">
+<div class="week-card">
+  <div class="week-number">12</div>
+  <div class="week-content">
+    <h4><a href="week12.html">Reinforcement Learning</a></h4>
+    <p>Q-learning, policy gradients</p>
+    <div class="week-tags">
+      <span class="tag">RL</span>
+      <span class="tag">Agents</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">13</div>
+  <div class="week-content">
+    <h4><a href="week13.html">Natural Language Processing</a></h4>
+    <p>Text processing, language models</p>
+    <div class="week-tags">
+      <span class="tag">NLP</span>
+      <span class="tag">Language</span>
+    </div>
+  </div>
+</div>
+
+<div class="week-card">
+  <div class="week-number">14</div>
+  <div class="week-content">
+    <h4><a href="week14.html">AI Ethics & Future Directions</a></h4>
+    <p>Ethics, bias, future of AI</p>
+    <div class="week-tags">
+      <span class="tag">Ethics</span>
+      <span class="tag">Future</span>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<style>
+.part-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.week-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.week-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary-gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.week-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
+}
+
+.week-card:hover::before {
+  transform: scaleX(1);
+}
+
+.week-number {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.week-content {
+  flex: 1;
+}
+
+.week-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.week-content h4 a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.week-content h4 a:hover {
+  color: var(--primary-color);
+}
+
+.week-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 1rem 0;
+}
+
+.week-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 768px) {
+  .part-cards {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 - **[Week 8: Supervised Learning I - Regression & Classification](week08.html)** - Linear models, decision trees
 - **[Week 9: Supervised Learning II - Advanced Models](week09.html)** - SVM, ensemble methods, neural networks
 - **[Week 10: Introduction to Neural Networks & Deep Learning](week10.html)** - Perceptrons, backpropagation, CNNs

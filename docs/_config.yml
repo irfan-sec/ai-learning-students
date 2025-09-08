@@ -4,8 +4,8 @@ description: "A comprehensive educational resource for learning Artificial Intel
 url: "https://irfan-sec.github.io"
 baseurl: "/ai-learning-students"
 
-# Theme
-theme: minima
+# Theme - Custom theme with layouts in _layouts/
+# theme: minima
 
 # Markdown settings
 markdown: kramdown
@@ -17,6 +17,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-sass-converter
 
 # Navigation
 header_pages:
@@ -35,6 +36,11 @@ header_pages:
   - week12.md
   - week13.md
   - week14.md
+
+# Sass/SCSS configuration
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude from processing
 exclude:
