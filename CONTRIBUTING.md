@@ -51,6 +51,10 @@ We welcome contributions from students, educators, and the AI community! This re
 - **Python Focus:** Code examples should primarily use Python 3.x
 
 ### File Structure Guidelines
+
+The repository now supports both the original research structure and a GitHub Pages documentation site:
+
+#### Original Research Structure
 ```
 weeks/
 ├── WeekXX_Topic_Name/
@@ -59,6 +63,16 @@ weeks/
 │   ├── exercises.md      # Practice questions
 │   ├── code/             # Python scripts and notebooks
 │   └── images/           # Diagrams and illustrations
+```
+
+#### GitHub Pages Documentation Structure
+```
+docs/
+├── _config.yml           # Jekyll configuration
+├── index.md             # Course overview and navigation
+├── weekXX.md            # Individual week pages (week01.md, week02.md, etc.)
+└── images/              # Visual assets for the documentation site
+    └── README.md        # Image documentation
 ```
 
 ---
@@ -72,26 +86,44 @@ git clone https://github.com/YOUR_USERNAME/ai-learning-students.git
 cd ai-learning-students
 ```
 
-### Step 2: Create a Feature Branch
+### Step 2: Choose Your Contribution Type
+
+#### Option A: Documentation Site (GitHub Pages)
+For improvements to the main documentation site:
+- Edit files in the `/docs` directory
+- Follow the existing week format (weekXX.md)
+- Test locally with Jekyll if possible: `bundle exec jekyll serve`
+- Ensure all links are relative for GitHub Pages compatibility
+
+#### Option B: Research Materials
+For detailed course materials and exercises:
+- Edit files in the `/weeks` directory
+- Maintain the existing folder structure
+- Include comprehensive exercises and code examples
+
+### Step 3: Create a Feature Branch
 ```bash
 git checkout -b feature/your-contribution-name
-# Examples: feature/week3-astar-examples, fix/week7-typos
+# Examples: feature/week3-astar-examples, fix/week7-typos, docs/improve-navigation
 ```
 
-### Step 3: Make Your Changes
+### Step 4: Make Your Changes
 - Follow the existing file structure and naming conventions
+- For GitHub Pages contributions: ensure Jekyll compatibility
+- For research materials: maintain comprehensive educational content
 - Test any code contributions to ensure they work
 - Preview markdown files to check formatting
 
-### Step 4: Commit and Push
+### Step 5: Commit and Push
 ```bash
 git add .
 git commit -m "Add: Clear description of your changes"
 git push origin feature/your-contribution-name
 ```
 
-### Step 5: Create a Pull Request
+### Step 6: Create a Pull Request
 - Use a descriptive title and detailed description
+- Specify whether changes affect GitHub Pages docs or research materials
 - Reference any related issues
 - Include screenshots for visual changes
 
@@ -126,6 +158,8 @@ git push origin feature/your-contribution-name
 - **Size:** Optimize images to be under 1MB when possible
 - **Attribution:** Always credit the source of images
 - **Alt Text:** Include descriptive alt text for accessibility
+- **GitHub Pages:** Place images in `/docs/images/` and reference with relative paths
+- **Research Materials:** Place images in `/weeks/WeekXX_Topic/images/`
 
 ### Suggested Visual Content
 - Algorithm flowcharts and pseudocode diagrams
@@ -139,22 +173,25 @@ git push origin feature/your-contribution-name
 ## ⚡ Quick Contribution Ideas
 
 ### Easy (Good for beginners)
-- Fix typos or broken links
+- Fix typos or broken links in documentation
 - Add missing alt text to images
 - Improve code comments
-- Update installation instructions
+- Update GitHub Pages navigation
+- Add relevant external resources
 
 ### Medium (Some AI knowledge helpful)
 - Add practice exercises for existing weeks
-- Create simple Python examples
+- Create simple Python examples for documentation
 - Write clearer explanations of complex concepts
-- Add relevant external resources
+- Improve GitHub Pages formatting and styling
+- Convert research materials to documentation format
 
 ### Advanced (Requires AI expertise)
-- Implement new algorithm examples
+- Implement new algorithm examples with full explanations
 - Create comprehensive Jupyter notebooks
 - Design interactive visualizations
 - Develop project assignments
+- Add new weeks or major content sections
 
 ---
 
