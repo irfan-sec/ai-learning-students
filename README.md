@@ -1,4 +1,4 @@
-# Introduction to Artificial Intelligence (CS 2250)
+# Introduction to Artificial Intelligence
 
 Welcome to the AI Learning Students Repository!  
 This repo is designed for 3rd semester students in Computer Science, Data Science, or related fields. It provides a practical, hands-on introduction to Artificial Intelligence, closely following the course outline below.
