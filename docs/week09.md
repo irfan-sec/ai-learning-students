@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 9: Supervised Learning II - Advanced Models"
 permalink: /week09.html
 ---

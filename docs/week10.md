@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 10: Introduction to Neural Networks & Deep Learning"
 permalink: /week10.html
 ---

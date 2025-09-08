@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 6: Reasoning under Uncertainty"
 permalink: /week06.html
 ---

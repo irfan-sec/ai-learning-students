@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 13: Ethics in AI"
 permalink: /week13.html
 ---

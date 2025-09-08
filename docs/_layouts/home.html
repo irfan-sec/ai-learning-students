@@ -1,0 +1,227 @@
+---
+layout: default
+---
+
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      {{ content }}
+    </div>
+    
+    <div class="hero-visual">
+      <div class="neural-network">
+        <div class="node" style="--delay: 0s"></div>
+        <div class="node" style="--delay: 0.2s"></div>
+        <div class="node" style="--delay: 0.4s"></div>
+        <div class="node" style="--delay: 0.6s"></div>
+        <div class="node" style="--delay: 0.8s"></div>
+        <div class="node" style="--delay: 1s"></div>
+        <div class="connection"></div>
+        <div class="connection"></div>
+        <div class="connection"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="quick-stats">
+    <div class="stat-card">
+      <div class="stat-number">14</div>
+      <div class="stat-label">Weeks</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100+</div>
+      <div class="stat-label">Exercises</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">50+</div>
+      <div class="stat-label">Code Examples</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">∞</div>
+      <div class="stat-label">Learning</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.hero-section {
+  margin: -2rem -1.5rem 3rem -1.5rem;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border-radius: 0 0 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.neural-network {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.node {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  animation-delay: var(--delay);
+}
+
+.node:nth-child(1) { top: 20%; left: 20%; }
+.node:nth-child(2) { top: 40%; left: 10%; }
+.node:nth-child(3) { top: 60%; left: 30%; }
+.node:nth-child(4) { top: 30%; right: 20%; }
+.node:nth-child(5) { top: 50%; right: 10%; }
+.node:nth-child(6) { top: 70%; right: 30%; }
+
+.connection {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  animation: flow 3s infinite;
+}
+
+.connection:nth-child(7) {
+  top: 25%;
+  left: 25%;
+  width: 40%;
+  transform: rotate(15deg);
+}
+
+.connection:nth-child(8) {
+  top: 45%;
+  left: 15%;
+  width: 50%;
+  transform: rotate(-10deg);
+}
+
+.connection:nth-child(9) {
+  top: 65%;
+  left: 35%;
+  width: 30%;
+  transform: rotate(25deg);
+}
+
+@keyframes flow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem auto;
+  max-width: var(--container-max-width);
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  text-align: center;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary-gradient);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Course navigation enhancement for homepage */
+.course-nav {
+  margin: 4rem 0;
+}
+
+.course-nav h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin: -2rem -1rem 2rem -1rem;
+    padding: 3rem 1rem;
+  }
+  
+  .hero-visual {
+    display: none;
+  }
+  
+  .quick-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-stats {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

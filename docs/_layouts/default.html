@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Navigation Header -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <a href="{{ '/' | relative_url }}" class="brand-link">
+            <div class="brand-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <span class="brand-text">{{ site.title }}</span>
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+          <div class="nav-links">
+            <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+            <div class="nav-dropdown">
+              <a href="#" class="nav-link dropdown-toggle">
+                <i class="fas fa-book"></i>
+                Weeks
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                {% for i in (1..14) %}
+                  {% assign week_num = i | prepend: '0' | slice: -2, 2 %}
+                  <a href="{{ '/week' | append: week_num | append: '.html' | relative_url }}" class="dropdown-link">
+                    Week {{ i }}
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          
+          <div class="nav-progress">
+            <div class="progress-indicator">
+              <div class="progress-circle">
+                <div class="progress-fill"></div>
+                <span class="progress-text">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-container">
+        {{ content }}
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>{{ site.title }}</h3>
+            <p>{{ site.description }}</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="{{ '/' | relative_url }}">Course Overview</a></li>
+              <li><a href="https://github.com/irfan-sec/ai-learning-students">GitHub Repository</a></li>
+              <li><a href="{{ '/week01.html' | relative_url }}">Get Started</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://aima.cs.berkeley.edu/">AIMA Textbook</a></li>
+              <li><a href="https://scikit-learn.org/">Scikit-learn</a></li>
+              <li><a href="https://www.fast.ai/">Fast.ai</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AI Learning Community. Licensed under MIT License.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+</body>
+</html>

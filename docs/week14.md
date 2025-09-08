@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 14: Course Review, Project Presentations, and Future of AI"
 permalink: /week14.html
 ---

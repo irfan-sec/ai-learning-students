@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 5: Knowledge Representation & Reasoning I (Logic)"
 permalink: /week05.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 11: Unsupervised Learning"
 permalink: /week11.html
 ---
