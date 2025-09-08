@@ -1,0 +1,26 @@
+{% assign current_week = page.title | split: ' ' | first | replace: 'Week', '' | plus: 0 %}
+
+<div class="page-navigation">
+  {% if current_week > 1 %}
+    <a href="week{{ current_week | minus: 1 | prepend: '0' | slice: -2, 2 }}.html" class="nav-button prev">
+      <i class="fas fa-chevron-left"></i>
+      Previous Week
+    </a>
+  {% else %}
+    <div></div>
+  {% endif %}
+  
+  <a href="index.html" class="nav-button home">
+    <i class="fas fa-home"></i>
+    Course Overview
+  </a>
+  
+  {% if current_week < 14 %}
+    <a href="week{{ current_week | plus: 1 | prepend: '0' | slice: -2, 2 }}.html" class="nav-button next">
+      Next Week
+      <i class="fas fa-chevron-right"></i>
+    </a>
+  {% else %}
+    <div></div>
+  {% endif %}
+</div>

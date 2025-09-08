@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 7: Machine Learning Fundamentals"
 permalink: /week07.html
 ---

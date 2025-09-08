@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: week
 title: "Week 1: Introduction to AI and Intelligent Agents"
 permalink: /week01.html
 ---
