@@ -1,0 +1,61 @@
+# Jekyll configuration for AI Learning Students
+title: "AI Learning Students"
+description: "A comprehensive introduction to Artificial Intelligence - 14-week curriculum"
+baseurl: "/ai-learning-students"
+url: "https://irfan-sec.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - weeks/
+
+# Collections
+collections:
+  weeks:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layout assignments
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "week*.md"
+    values:
+      layout: "week"
+  - scope:
+      path: "index.md"
+    values:
+      layout: "home"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Course Outline"
+    url: "/#course-outline"
+  - title: "Weeks"
+    url: "/#weeks"
+
+# Course metadata
+course:
+  code: "CS 2250"
+  semester: "14-week curriculum"
+  target: "3rd Semester Bachelor's students"
