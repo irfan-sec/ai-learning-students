@@ -12,7 +12,7 @@ By the end of this week, students will be able to:
 
 ## 🧠 What is Artificial Intelligence?
 
-![AI Timeline]([https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/AI_timeline.png/640px-AI_timeline.png](https://www.google.com/imgres?q=Ai%20timeline&imgurl=https%3A%2F%2Fqbi.uq.edu.au%2Ffiles%2F40697%2FThe-Brain-Intelligent-Machines-AI-timeline.jpg&imgrefurl=https%3A%2F%2Fqbi.uq.edu.au%2Fbrain%2Fintelligent-machines%2Fhistory-artificial-intelligence&docid=O8W1WVeoEh7KKM&tbnid=p5U5MGst_ZkJEM&vet=12ahUKEwjwpLqG6M2PAxXISWwGHUQ9PLAQM3oECCMQAA..i&w=2223&h=1786&hcb=2&ved=2ahUKEwjwpLqG6M2PAxXISWwGHUQ9PLAQM3oECCMQAA))
+![AI Timeline](https://qbi.uq.edu.au/files/40697/The-Brain-Intelligent-Machines-AI-timeline.jpg)
 
 **Artificial Intelligence (AI)** is the science of making machines act intelligently. But what does "acting intelligently" mean?
 
