@@ -4,7 +4,7 @@
 
 Welcome to the AI Learning Students Repository! This comprehensive educational resource provides a practical, hands-on introduction to Artificial Intelligence following a structured 14-week curriculum.
 
-![AI Concept Map](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/ArtificialFictionBrain.png/640px-ArtificialFictionBrain.png)
+![AI Concept Map](https://images.edrawmind.com/article2023/ai-concept-map/illustration-of-concept-map.jpg)
 
 ---
 
