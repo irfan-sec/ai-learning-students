@@ -48,7 +48,7 @@ An **agent** is anything that can be viewed as:
 - **Perceiving** its environment through **sensors**
 - **Acting** upon the environment through **actuators**
 
-![Agent Environment Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/IntelligentAgent-SimpleReflex.png/400px-IntelligentAgent-SimpleReflex.png)
+![Agent Environment Diagram](https://learnetutorials.com/assets/images/ai/agents/agent_environment.jpg)
 
 ### The PEAS Framework
 
