@@ -17,7 +17,7 @@ Many AI problems can be solved by **searching** through a space of possible solu
 - Choose the best path among many alternatives
 - Explore possibilities systematically
 
-![Search Tree Example](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Graph_search_example.gif/400px-Graph_search_example.gif)
+![Search Tree Example](https://pharmacelera.com/wp-content/uploads/2022/03/Figure2-1024x343.png)
 
 ### Real-World Examples
 - **GPS Navigation:** Find the shortest route from A to B
