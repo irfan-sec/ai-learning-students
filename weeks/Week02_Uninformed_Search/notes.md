@@ -41,7 +41,7 @@ Every search problem has these key components:
 
 ### Example: 8-Puzzle Problem
 
-![8-Puzzle](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/15-puzzle_magical.svg/240px-15-puzzle_magical.svg.png)
+![8-Puzzle](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIm3pOpw_gcixz8SvQWVWsx6T3ilNiXAyTg&s)
 
 **Problem Formulation:**
 - **Initial State:** Current arrangement of tiles
