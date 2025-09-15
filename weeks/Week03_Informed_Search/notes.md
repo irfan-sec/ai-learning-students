@@ -14,7 +14,7 @@ By the end of this week, students will be able to:
 
 Last week we explored **uninformed search** strategies that systematically explore the search space without additional knowledge. This week, we'll learn how **domain-specific knowledge** can dramatically improve search efficiency.
 
-![Informed vs Uninformed Search](https://miro.medium.com/max/1400/1*4bWILdLKNgRQGhVmD-k1zA.png)
+![Informed vs Uninformed Search](https://media.geeksforgeeks.org/wp-content/uploads/AI-algos-1-e1547043543151.png)
 
 ### The Power of Heuristics
 
@@ -47,7 +47,7 @@ A heuristic is **consistent** if for every node n and successor n':
 - Consistent heuristics are also admissible
 - Ensures f(n) never decreases along any path
 
-![Heuristic Properties](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Heuristic_admissible_and_consistent.svg/400px-Heuristic_admissible_and_consistent.svg.png)
+![Heuristic Properties](https://almablog-media.s3.ap-south-1.amazonaws.com/Heuristic_Search_Algorithms_in_AI_cf871e375c.png)
 
 ---
 
