@@ -75,7 +75,7 @@ Every search problem has these key components:
 - **Tree Search:** May revisit states (can get stuck in loops)
 - **Graph Search:** Keeps track of explored states (avoids loops)
 
-![Tree vs Graph Search](https://miro.medium.com/max/1400/1*GT9oSo0agIeIrKeLYBKTEw.png)
+![Tree vs Graph Search](https://media.geeksforgeeks.org/wp-content/uploads/20200630123458/tree_vs_graph.jpg)
 
 ---
 
