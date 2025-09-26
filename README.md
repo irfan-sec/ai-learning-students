@@ -34,20 +34,20 @@ This course provides a broad introduction to the fundamental principles and tech
 - **[Week 4: Adversarial Search (Game Playing)](weeks/Week04_Adversarial_Search/)** ⚠️ *Notes only*
 
 ### Part II: Knowledge, Reasoning, and Uncertainty *(Weeks 5-6)*
-- **Week 5: Knowledge Representation & Reasoning I (Logic)** 🚧 *Coming soon*
-- **Week 6: Reasoning under Uncertainty** 🚧 *Coming soon*
+- **[Week 5: Knowledge Representation & Reasoning I (Logic)](weeks/Week05_Knowledge_Representation/)** ✅
+- **[Week 6: Reasoning under Uncertainty](weeks/Week06_Reasoning_Under_Uncertainty/)** ⚠️ *Notes only*
 
 ### Part III: Introduction to Machine Learning *(Weeks 7-11)*
 - **[Week 7: Machine Learning Fundamentals](weeks/Week07_ML_Fundamentals/)** ⚠️ *Notes only*
-- **Week 8: Supervised Learning I - Regression & Classification** 🚧 *Coming soon*
-- **Week 9: Supervised Learning II - Advanced Models** 🚧 *Coming soon*
-- **Week 10: Introduction to Neural Networks & Deep Learning** 🚧 *Coming soon*
-- **Week 11: Unsupervised Learning** 🚧 *Coming soon*
+- **[Week 8: Supervised Learning I - Regression & Classification](weeks/Week08_Supervised_Learning_I/)** ⚠️ *Notes only*
+- **[Week 9: Supervised Learning II - Advanced Models](weeks/Week09_Supervised_Learning_II/)** ⚠️ *Notes only*
+- **[Week 10: Introduction to Neural Networks & Deep Learning](weeks/Week10_Neural_Networks/)** ⚠️ *Notes only*
+- **[Week 11: Unsupervised Learning](weeks/Week11_Unsupervised_Learning/)** ⚠️ *Notes only*
 
 ### Part IV: Modern Topics and Conclusion *(Weeks 12-14)*
-- **Week 12: AI in Practice & Selected Topics** 🚧 *Coming soon*
+- **[Week 12: AI in Practice & Selected Topics](weeks/Week12_AI_in_Practice/)** ⚠️ *Notes only*
 - **[Week 13: Ethics in AI](weeks/Week13_Ethics_in_AI/)** ⚠️ *Notes only*
-- **Week 14: Course Review, Project Presentations, and Future of AI** 🚧 *Coming soon*
+- **[Week 14: Course Review, Project Presentations, and Future of AI](weeks/Week14_Course_Review/)** ⚠️ *Notes only*
 
 **Legend:** ✅ Complete | ⚠️ Partial | 🚧 Planned
 
