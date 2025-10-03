@@ -30,24 +30,24 @@ This course provides a broad introduction to the fundamental principles and tech
 ### Part I: Foundations and Problem-Solving *(Weeks 1-4)*
 - **[Week 1: Introduction to AI and Intelligent Agents](weeks/Week01_Introduction_to_AI/)** ✅
 - **[Week 2: Problem-Solving by Search I (Uninformed Search)](weeks/Week02_Uninformed_Search/)** ✅  
-- **[Week 3: Problem-Solving by Search II (Informed Search)](weeks/Week03_Informed_Search/)** ⚠️ *Notes only*
-- **[Week 4: Adversarial Search (Game Playing)](weeks/Week04_Adversarial_Search/)** ⚠️ *Notes only*
+- **[Week 3: Problem-Solving by Search II (Informed Search)](weeks/Week03_Informed_Search/)** ✅
+- **[Week 4: Adversarial Search (Game Playing)](weeks/Week04_Adversarial_Search/)** ✅
 
 ### Part II: Knowledge, Reasoning, and Uncertainty *(Weeks 5-6)*
 - **[Week 5: Knowledge Representation & Reasoning I (Logic)](weeks/Week05_Knowledge_Representation/)** ✅
-- **[Week 6: Reasoning under Uncertainty](weeks/Week06_Reasoning_Under_Uncertainty/)** ⚠️ *Notes only*
+- **[Week 6: Reasoning under Uncertainty](weeks/Week06_Reasoning_Under_Uncertainty/)** ✅
 
 ### Part III: Introduction to Machine Learning *(Weeks 7-11)*
-- **[Week 7: Machine Learning Fundamentals](weeks/Week07_ML_Fundamentals/)** ⚠️ *Notes only*
-- **[Week 8: Supervised Learning I - Regression & Classification](weeks/Week08_Supervised_Learning_I/)** ⚠️ *Notes only*
-- **[Week 9: Supervised Learning II - Advanced Models](weeks/Week09_Supervised_Learning_II/)** ⚠️ *Notes only*
-- **[Week 10: Introduction to Neural Networks & Deep Learning](weeks/Week10_Neural_Networks/)** ⚠️ *Notes only*
-- **[Week 11: Unsupervised Learning](weeks/Week11_Unsupervised_Learning/)** ⚠️ *Notes only*
+- **[Week 7: Machine Learning Fundamentals](weeks/Week07_ML_Fundamentals/)** ✅
+- **[Week 8: Supervised Learning I - Regression & Classification](weeks/Week08_Supervised_Learning_I/)** ✅
+- **[Week 9: Supervised Learning II - Advanced Models](weeks/Week09_Supervised_Learning_II/)** ✅
+- **[Week 10: Introduction to Neural Networks & Deep Learning](weeks/Week10_Neural_Networks/)** ✅
+- **[Week 11: Unsupervised Learning](weeks/Week11_Unsupervised_Learning/)** ✅
 
 ### Part IV: Modern Topics and Conclusion *(Weeks 12-14)*
-- **[Week 12: AI in Practice & Selected Topics](weeks/Week12_AI_in_Practice/)** ⚠️ *Notes only*
-- **[Week 13: Ethics in AI](weeks/Week13_Ethics_in_AI/)** ⚠️ *Notes only*
-- **[Week 14: Course Review, Project Presentations, and Future of AI](weeks/Week14_Course_Review/)** ⚠️ *Notes only*
+- **[Week 12: AI in Practice & Selected Topics](weeks/Week12_AI_in_Practice/)** ✅
+- **[Week 13: Ethics in AI](weeks/Week13_Ethics_in_AI/)** ✅
+- **[Week 14: Course Review, Project Presentations, and Future of AI](weeks/Week14_Course_Review/)** ✅
 
 **Legend:** ✅ Complete | ⚠️ Partial | 🚧 Planned
 
@@ -407,13 +407,18 @@ Each complete week's folder contains:
 |------|-------|--------|-------|-----------|-----------|------|
 | 1 | Introduction to AI | ✅ Complete | ✅ | ✅ | ✅ | ✅ |
 | 2 | Uninformed Search | ✅ Complete | ✅ | ✅ | ✅ | ✅ |
-| 3 | Informed Search | ⚠️ Partial | ✅ | 🚧 | 🚧 | ✅ |
-| 4 | Adversarial Search | ⚠️ Partial | ✅ | 🚧 | 🚧 | ✅ |
-| 5-6 | Knowledge & Logic | 🚧 Planned | 🚧 | 🚧 | 🚧 | 🚧 |
-| 7 | ML Fundamentals | ⚠️ Partial | ✅ | 🚧 | 🚧 | ✅ |
-| 8-12 | Advanced ML Topics | 🚧 Planned | 🚧 | 🚧 | 🚧 | 🚧 |
-| 13 | Ethics in AI | ⚠️ Partial | ✅ | 🚧 | 🚧 | 🚧 |
-| 14 | Review & Future | 🚧 Planned | 🚧 | 🚧 | 🚧 | 🚧 |
+| 3 | Informed Search | ✅ Complete | ✅ | ✅ | ✅ | ✅ |
+| 4 | Adversarial Search | ✅ Complete | ✅ | ✅ | ✅ | ✅ |
+| 5 | Knowledge Representation | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 6 | Reasoning Under Uncertainty | ✅ Complete | ✅ | ✅ | ✅ | ✅ |
+| 7 | ML Fundamentals | ✅ Complete | ✅ | ✅ | ✅ | ✅ |
+| 8 | Supervised Learning I | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 9 | Supervised Learning II | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 10 | Neural Networks | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 11 | Unsupervised Learning | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 12 | AI in Practice | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 13 | Ethics in AI | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
+| 14 | Course Review & Future | ✅ Complete | ✅ | ✅ | ✅ | ⚠️ |
 
 ### 🔄 Recommended Learning Flow
 1. **📖 Read:** Start with the week's `notes.md` for theoretical foundation
