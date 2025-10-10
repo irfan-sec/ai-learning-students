@@ -5,7 +5,6 @@
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-orange.svg)](CONTRIBUTING.md)
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-**Course Code:** CS 2250  
 **Target Audience:** 3rd Semester Bachelor's students in Computer Science, Data Science, or related fields  
 **Duration:** 14 weeks | **Credits:** 3 | **Prerequisites:** Programming Fundamentals, Basic Math
 
